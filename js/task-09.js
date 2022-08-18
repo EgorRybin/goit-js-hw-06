@@ -7,8 +7,9 @@ const btnRef = document.querySelector('button');
 const textRef = document.querySelector('[class="color"]');
 
 const onBtnRefClick = (event) => {
-  body.style.backgroundColor = getRandomHexColor();
-  textRef.textContent = getRandomHexColor();
+  const colorRand = getRandomHexColor();
+  body.style.backgroundColor = colorRand;
+  textRef.textContent = colorRand;
   
 };
 
